@@ -284,13 +284,13 @@ const UserGeneralSettings: React.FC = () => {
                       </label>
                       <div className="form-input">
                         <div className="flex flex-col">
-                          <div className="flex items-center mb-4">
+                          <div className="flex items-center mb-1.5">
                             <input
                               type="checkbox"
                               checked={movieQuotaEnabled}
                               onChange={() => setMovieQuotaEnabled((s) => !s)}
                             />
-                            <span className="ml-2 text-gray-300">
+                            <span className="ml-2 font-semibold text-gray-300">
                               {intl.formatMessage(messages.enableOverride)}
                             </span>
                           </div>
@@ -324,13 +324,13 @@ const UserGeneralSettings: React.FC = () => {
                       </label>
                       <div className="form-input">
                         <div className="flex flex-col">
-                          <div className="flex items-center mb-4">
+                          <div className="flex items-center mb-1.5">
                             <input
                               type="checkbox"
                               checked={tvQuotaEnabled}
                               onChange={() => setTvQuotaEnabled((s) => !s)}
                             />
-                            <span className="ml-2 text-gray-300">
+                            <span className="ml-2 font-semibold text-gray-300">
                               {intl.formatMessage(messages.enableOverride)}
                             </span>
                           </div>
